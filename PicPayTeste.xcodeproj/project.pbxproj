@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		959318A2D0A316310F7DC4D5 /* Pods_PicPayTeste.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1020F091623D28D2C65EA79C /* Pods_PicPayTeste.framework */; };
 		F5D7B06C24AE2CD600BA1C34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7B06B24AE2CD600BA1C34 /* AppDelegate.swift */; };
 		F5D7B06E24AE2CD600BA1C34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7B06D24AE2CD600BA1C34 /* SceneDelegate.swift */; };
 		F5D7B07024AE2CD600BA1C34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7B06F24AE2CD600BA1C34 /* ViewController.swift */; };
@@ -20,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1020F091623D28D2C65EA79C /* Pods_PicPayTeste.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PicPayTeste.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EB3211504D40CF62DBF454E /* Pods-PicPayTeste.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicPayTeste.release.xcconfig"; path = "Target Support Files/Pods-PicPayTeste/Pods-PicPayTeste.release.xcconfig"; sourceTree = "<group>"; };
+		772C67A7B8F80DFF092518A4 /* Pods-PicPayTeste.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicPayTeste.debug.xcconfig"; path = "Target Support Files/Pods-PicPayTeste/Pods-PicPayTeste.debug.xcconfig"; sourceTree = "<group>"; };
 		F5D7B06824AE2CD500BA1C34 /* PicPayTeste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicPayTeste.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D7B06B24AE2CD600BA1C34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5D7B06D24AE2CD600BA1C34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,17 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				959318A2D0A316310F7DC4D5 /* Pods_PicPayTeste.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74F6F426C35B7C6C3EEA285D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				772C67A7B8F80DFF092518A4 /* Pods-PicPayTeste.debug.xcconfig */,
+				6EB3211504D40CF62DBF454E /* Pods-PicPayTeste.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9E347924F94EB34B4A8C9E84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1020F091623D28D2C65EA79C /* Pods_PicPayTeste.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F5D7B05F24AE2CD400BA1C34 = {
 			isa = PBXGroup;
 			children = (
 				F5D7B06A24AE2CD500BA1C34 /* PicPayTeste */,
 				F5D7B06924AE2CD500BA1C34 /* Products */,
+				74F6F426C35B7C6C3EEA285D /* Pods */,
+				9E347924F94EB34B4A8C9E84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +111,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5D7B07F24AE2CE300BA1C34 /* Build configuration list for PBXNativeTarget "PicPayTeste" */;
 			buildPhases = (
+				7CB51EB0314F2DE30F3CF27B /* [CP] Check Pods Manifest.lock */,
 				F5D7B06424AE2CD500BA1C34 /* Sources */,
 				F5D7B06524AE2CD500BA1C34 /* Frameworks */,
 				F5D7B06624AE2CD500BA1C34 /* Resources */,
+				4EDE8413CBF7363673ECB06F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,6 +172,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4EDE8413CBF7363673ECB06F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PicPayTeste/Pods-PicPayTeste-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PicPayTeste/Pods-PicPayTeste-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PicPayTeste/Pods-PicPayTeste-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CB51EB0314F2DE30F3CF27B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PicPayTeste-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F5D7B06424AE2CD500BA1C34 /* Sources */ = {
@@ -298,6 +367,7 @@
 		};
 		F5D7B08024AE2CE300BA1C34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 772C67A7B8F80DFF092518A4 /* Pods-PicPayTeste.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -316,6 +386,7 @@
 		};
 		F5D7B08124AE2CE300BA1C34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EB3211504D40CF62DBF454E /* Pods-PicPayTeste.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

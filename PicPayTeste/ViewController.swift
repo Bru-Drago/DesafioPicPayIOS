@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class ViewController: UIViewController {
 
@@ -16,6 +17,7 @@ class ViewController: UIViewController {
     
     //Propriedades
      var contatos = [ContatoService]()
+     let placeholderImg = UIImage(named: "picpay.png")
     
      
     override func viewDidLoad() {
@@ -73,6 +75,22 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
         
         cell.nomeLabel.text = contatos[indexPath.row].name
         cell.usernameLabel.text = contatos[indexPath.row].username
+        
+        //Download e setUp da imagem
+        
+        let img = contatos[indexPath.row].img
+        if let imgURL = URL(string: img){
+            
+            cell.contatoImage.layer.cornerRadius = cell.contatoImage.frame.height / 2
+            cell.contatoImage.sd_setImage(with: imgURL, placeholderImage: placeholderImg, options: .highPriority) { (downloadImg, error, cacheType, downloadurl) in
+                
+                if let error = error{
+                    print("Erro no download da imagem :\(error.localizedDescription)")
+                }else{
+                    print("Download efetuado com sucesso \(downloadurl?.absoluteString)")
+                }
+            }
+        }//fim do if/let
         
        return cell
    }
