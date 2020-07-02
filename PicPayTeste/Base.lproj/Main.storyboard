@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IuU-xd-AVg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contatos-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PicPayTeste" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="A quem você deseja pagar?" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55L-5V-Mzm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <offsetWrapper key="searchFieldBackgroundPositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="search"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QbU-Qf-kaW">
+                                <rect key="frame" x="0.0" y="56" width="414" height="700"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ContatoCell" rowHeight="100" id="8i0-qO-FBe" customClass="ContatoCellTableViewCell" customModule="PicPayTeste" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8i0-qO-FBe" id="dh0-Js-jqs">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="picpay.png" translatesAutoresizingMaskIntoConstraints="NO" id="mst-XB-rny">
+                                                    <rect key="frame" x="25" y="16" width="80" height="68"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="4th-ie-I22"/>
+                                                        <constraint firstAttribute="width" constant="80" id="G3y-t5-qSW"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="ieJ-M7-z95"/>
+                                                        <constraint firstAttribute="height" constant="80" id="jhU-hA-1s3"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgk-pr-7IT">
+                                                    <rect key="frame" x="115" y="16" width="274" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="VEe-e7-aO4"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="23"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome Completo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKz-ba-7hS">
+                                                    <rect key="frame" x="115" y="47" width="274" height="21"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cKz-ba-7hS" firstAttribute="top" secondItem="Sgk-pr-7IT" secondAttribute="bottom" constant="10" id="Bo4-aq-j0f"/>
+                                                <constraint firstItem="cKz-ba-7hS" firstAttribute="top" secondItem="Sgk-pr-7IT" secondAttribute="bottom" constant="10" id="DzV-SJ-n9H"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="mst-XB-rny" secondAttribute="bottom" constant="5" id="EMu-WM-u4c"/>
+                                                <constraint firstItem="cKz-ba-7hS" firstAttribute="leading" secondItem="mst-XB-rny" secondAttribute="trailing" constant="10" id="GLg-O8-ND9"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="cKz-ba-7hS" secondAttribute="bottom" constant="21" id="Ht1-Bh-Qa7"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="cKz-ba-7hS" secondAttribute="trailing" constant="5" id="bib-zi-OBr"/>
+                                                <constraint firstItem="mst-XB-rny" firstAttribute="top" secondItem="dh0-Js-jqs" secondAttribute="topMargin" constant="5" id="cN8-PO-hdu"/>
+                                                <constraint firstItem="Sgk-pr-7IT" firstAttribute="top" secondItem="dh0-Js-jqs" secondAttribute="topMargin" constant="5" id="hSY-uM-a9I"/>
+                                                <constraint firstItem="Sgk-pr-7IT" firstAttribute="leading" secondItem="mst-XB-rny" secondAttribute="trailing" constant="10" id="hma-mQ-NhB"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Sgk-pr-7IT" secondAttribute="trailing" constant="5" id="lf0-Pt-zzr"/>
+                                                <constraint firstItem="mst-XB-rny" firstAttribute="leading" secondItem="dh0-Js-jqs" secondAttribute="leadingMargin" constant="5" id="yFl-9V-pMM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="contatoImage" destination="mst-XB-rny" id="Cha-v5-hk4"/>
+                                            <outlet property="nomeLabel" destination="cKz-ba-7hS" id="vwE-Ce-hdZ"/>
+                                            <outlet property="usernameLabel" destination="Sgk-pr-7IT" id="Sjg-cR-C1v"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QbU-Qf-kaW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ixx-lJ-Xcv"/>
+                            <constraint firstItem="QbU-Qf-kaW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KCM-Gp-sxy"/>
+                            <constraint firstAttribute="bottom" secondItem="QbU-Qf-kaW" secondAttribute="bottom" id="TKh-t4-ZRG"/>
+                            <constraint firstItem="QbU-Qf-kaW" firstAttribute="top" secondItem="55L-5V-Mzm" secondAttribute="bottom" id="USI-N6-q1L"/>
+                            <constraint firstItem="QbU-Qf-kaW" firstAttribute="top" secondItem="55L-5V-Mzm" secondAttribute="bottom" id="Z4L-li-EKk"/>
+                            <constraint firstItem="55L-5V-Mzm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bEW-e7-VAW"/>
+                            <constraint firstItem="55L-5V-Mzm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kAX-rx-QpP"/>
+                            <constraint firstItem="55L-5V-Mzm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="o0I-OT-nIM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Contatos" largeTitleDisplayMode="always" id="tA2-oK-KTl"/>
+                    <connections>
+                        <outlet property="contatoTableView" destination="QbU-Qf-kaW" id="jli-GU-0c3"/>
+                        <outlet property="pesquisaSearchBar" destination="55L-5V-Mzm" id="YDy-JE-36v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="114.50892857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gWO-k3-rzI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IuU-xd-AVg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" largeTitles="YES" id="CC1-pb-lkJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nvL-7D-SFG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FvV-JU-Ui9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="picpay.png" width="1200" height="630"/>
+    </resources>
+</document>

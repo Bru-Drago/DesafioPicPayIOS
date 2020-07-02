@@ -1,0 +1,372 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5D7B06C24AE2CD600BA1C34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7B06B24AE2CD600BA1C34 /* AppDelegate.swift */; };
+		F5D7B06E24AE2CD600BA1C34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7B06D24AE2CD600BA1C34 /* SceneDelegate.swift */; };
+		F5D7B07024AE2CD600BA1C34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7B06F24AE2CD600BA1C34 /* ViewController.swift */; };
+		F5D7B07324AE2CD600BA1C34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D7B07124AE2CD600BA1C34 /* Main.storyboard */; };
+		F5D7B07624AE2CD600BA1C34 /* PicPayTeste.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5D7B07424AE2CD600BA1C34 /* PicPayTeste.xcdatamodeld */; };
+		F5D7B07824AE2CE200BA1C34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5D7B07724AE2CE200BA1C34 /* Assets.xcassets */; };
+		F5D7B07B24AE2CE200BA1C34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D7B07924AE2CE200BA1C34 /* LaunchScreen.storyboard */; };
+		F5D7B08324AE328F00BA1C34 /* ContatoCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7B08224AE328E00BA1C34 /* ContatoCellTableViewCell.swift */; };
+		F5D7B08524AE492500BA1C34 /* ContatoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7B08424AE492400BA1C34 /* ContatoService.swift */; };
+		F5D7B08724AE653600BA1C34 /* picpay.png in Resources */ = {isa = PBXBuildFile; fileRef = F5D7B08624AE653300BA1C34 /* picpay.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F5D7B06824AE2CD500BA1C34 /* PicPayTeste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicPayTeste.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D7B06B24AE2CD600BA1C34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5D7B06D24AE2CD600BA1C34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F5D7B06F24AE2CD600BA1C34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5D7B07224AE2CD600BA1C34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5D7B07524AE2CD600BA1C34 /* PicPayTeste.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PicPayTeste.xcdatamodel; sourceTree = "<group>"; };
+		F5D7B07724AE2CE200BA1C34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5D7B07A24AE2CE200BA1C34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5D7B07C24AE2CE200BA1C34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5D7B08224AE328E00BA1C34 /* ContatoCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatoCellTableViewCell.swift; sourceTree = "<group>"; };
+		F5D7B08424AE492400BA1C34 /* ContatoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatoService.swift; sourceTree = "<group>"; };
+		F5D7B08624AE653300BA1C34 /* picpay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picpay.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5D7B06524AE2CD500BA1C34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5D7B05F24AE2CD400BA1C34 = {
+			isa = PBXGroup;
+			children = (
+				F5D7B06A24AE2CD500BA1C34 /* PicPayTeste */,
+				F5D7B06924AE2CD500BA1C34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5D7B06924AE2CD500BA1C34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5D7B06824AE2CD500BA1C34 /* PicPayTeste.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5D7B06A24AE2CD500BA1C34 /* PicPayTeste */ = {
+			isa = PBXGroup;
+			children = (
+				F5D7B06B24AE2CD600BA1C34 /* AppDelegate.swift */,
+				F5D7B06D24AE2CD600BA1C34 /* SceneDelegate.swift */,
+				F5D7B06F24AE2CD600BA1C34 /* ViewController.swift */,
+				F5D7B08424AE492400BA1C34 /* ContatoService.swift */,
+				F5D7B07124AE2CD600BA1C34 /* Main.storyboard */,
+				F5D7B07724AE2CE200BA1C34 /* Assets.xcassets */,
+				F5D7B08624AE653300BA1C34 /* picpay.png */,
+				F5D7B07924AE2CE200BA1C34 /* LaunchScreen.storyboard */,
+				F5D7B07C24AE2CE200BA1C34 /* Info.plist */,
+				F5D7B07424AE2CD600BA1C34 /* PicPayTeste.xcdatamodeld */,
+				F5D7B08224AE328E00BA1C34 /* ContatoCellTableViewCell.swift */,
+			);
+			path = PicPayTeste;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5D7B06724AE2CD500BA1C34 /* PicPayTeste */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5D7B07F24AE2CE300BA1C34 /* Build configuration list for PBXNativeTarget "PicPayTeste" */;
+			buildPhases = (
+				F5D7B06424AE2CD500BA1C34 /* Sources */,
+				F5D7B06524AE2CD500BA1C34 /* Frameworks */,
+				F5D7B06624AE2CD500BA1C34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PicPayTeste;
+			productName = PicPayTeste;
+			productReference = F5D7B06824AE2CD500BA1C34 /* PicPayTeste.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5D7B06024AE2CD400BA1C34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Bruna Fernanda Drago";
+				TargetAttributes = {
+					F5D7B06724AE2CD500BA1C34 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = F5D7B06324AE2CD400BA1C34 /* Build configuration list for PBXProject "PicPayTeste" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5D7B05F24AE2CD400BA1C34;
+			productRefGroup = F5D7B06924AE2CD500BA1C34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5D7B06724AE2CD500BA1C34 /* PicPayTeste */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5D7B06624AE2CD500BA1C34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D7B07B24AE2CE200BA1C34 /* LaunchScreen.storyboard in Resources */,
+				F5D7B07824AE2CE200BA1C34 /* Assets.xcassets in Resources */,
+				F5D7B07324AE2CD600BA1C34 /* Main.storyboard in Resources */,
+				F5D7B08724AE653600BA1C34 /* picpay.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5D7B06424AE2CD500BA1C34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D7B08524AE492500BA1C34 /* ContatoService.swift in Sources */,
+				F5D7B07024AE2CD600BA1C34 /* ViewController.swift in Sources */,
+				F5D7B06C24AE2CD600BA1C34 /* AppDelegate.swift in Sources */,
+				F5D7B06E24AE2CD600BA1C34 /* SceneDelegate.swift in Sources */,
+				F5D7B07624AE2CD600BA1C34 /* PicPayTeste.xcdatamodeld in Sources */,
+				F5D7B08324AE328F00BA1C34 /* ContatoCellTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F5D7B07124AE2CD600BA1C34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5D7B07224AE2CD600BA1C34 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5D7B07924AE2CE200BA1C34 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5D7B07A24AE2CE200BA1C34 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5D7B07D24AE2CE300BA1C34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5D7B07E24AE2CE300BA1C34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5D7B08024AE2CE300BA1C34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5882QKM9XK;
+				INFOPLIST_FILE = PicPayTeste/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.drago.PicPayTeste;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5D7B08124AE2CE300BA1C34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5882QKM9XK;
+				INFOPLIST_FILE = PicPayTeste/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.drago.PicPayTeste;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5D7B06324AE2CD400BA1C34 /* Build configuration list for PBXProject "PicPayTeste" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5D7B07D24AE2CE300BA1C34 /* Debug */,
+				F5D7B07E24AE2CE300BA1C34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5D7B07F24AE2CE300BA1C34 /* Build configuration list for PBXNativeTarget "PicPayTeste" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5D7B08024AE2CE300BA1C34 /* Debug */,
+				F5D7B08124AE2CE300BA1C34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F5D7B07424AE2CD600BA1C34 /* PicPayTeste.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F5D7B07524AE2CD600BA1C34 /* PicPayTeste.xcdatamodel */,
+			);
+			currentVersion = F5D7B07524AE2CD600BA1C34 /* PicPayTeste.xcdatamodel */;
+			path = PicPayTeste.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F5D7B06024AE2CD400BA1C34 /* Project object */;
+}
