@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,8 @@
 		F5D7B08324AE328F00BA1C34 /* ContatoCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7B08224AE328E00BA1C34 /* ContatoCellTableViewCell.swift */; };
 		F5D7B08524AE492500BA1C34 /* ContatoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7B08424AE492400BA1C34 /* ContatoService.swift */; };
 		F5D7B08724AE653600BA1C34 /* picpay.png in Resources */ = {isa = PBXBuildFile; fileRef = F5D7B08624AE653300BA1C34 /* picpay.png */; };
+		F5DA9A8F24B3A80400BAD8B7 /* cartaoImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DA9A8E24B3A80400BAD8B7 /* cartaoImage.png */; };
+		F5DA9A9524B3BEE000BAD8B7 /* RegisterCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DA9A9424B3BEE000BAD8B7 /* RegisterCardVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		F5D7B08224AE328E00BA1C34 /* ContatoCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatoCellTableViewCell.swift; sourceTree = "<group>"; };
 		F5D7B08424AE492400BA1C34 /* ContatoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatoService.swift; sourceTree = "<group>"; };
 		F5D7B08624AE653300BA1C34 /* picpay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picpay.png; sourceTree = "<group>"; };
+		F5DA9A8E24B3A80400BAD8B7 /* cartaoImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cartaoImage.png; sourceTree = "<group>"; };
+		F5DA9A9424B3BEE000BAD8B7 /* RegisterCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCardVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,6 @@
 				772C67A7B8F80DFF092518A4 /* Pods-PicPayTeste.debug.xcconfig */,
 				6EB3211504D40CF62DBF454E /* Pods-PicPayTeste.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -91,17 +94,59 @@
 			children = (
 				F5D7B06B24AE2CD600BA1C34 /* AppDelegate.swift */,
 				F5D7B06D24AE2CD600BA1C34 /* SceneDelegate.swift */,
-				F5D7B06F24AE2CD600BA1C34 /* ViewController.swift */,
-				F5D7B08424AE492400BA1C34 /* ContatoService.swift */,
-				F5D7B07124AE2CD600BA1C34 /* Main.storyboard */,
+				F5D7B08C24AFC3B900BA1C34 /* Service */,
+				F5D7B08B24AFC39200BA1C34 /* View */,
+				F5D7B08A24AFBFA300BA1C34 /* Model */,
+				F5D7B08924AFBF9200BA1C34 /* Storyboard */,
+				F5D7B08824AFBF8200BA1C34 /* ViewController */,
 				F5D7B07724AE2CE200BA1C34 /* Assets.xcassets */,
+				F5DA9A8E24B3A80400BAD8B7 /* cartaoImage.png */,
 				F5D7B08624AE653300BA1C34 /* picpay.png */,
-				F5D7B07924AE2CE200BA1C34 /* LaunchScreen.storyboard */,
 				F5D7B07C24AE2CE200BA1C34 /* Info.plist */,
 				F5D7B07424AE2CD600BA1C34 /* PicPayTeste.xcdatamodeld */,
-				F5D7B08224AE328E00BA1C34 /* ContatoCellTableViewCell.swift */,
 			);
 			path = PicPayTeste;
+			sourceTree = "<group>";
+		};
+		F5D7B08824AFBF8200BA1C34 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F5D7B06F24AE2CD600BA1C34 /* ViewController.swift */,
+				F5DA9A9424B3BEE000BAD8B7 /* RegisterCardVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F5D7B08924AFBF9200BA1C34 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F5D7B07124AE2CD600BA1C34 /* Main.storyboard */,
+				F5D7B07924AE2CE200BA1C34 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F5D7B08A24AFBFA300BA1C34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5D7B08B24AFC39200BA1C34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5D7B08224AE328E00BA1C34 /* ContatoCellTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5D7B08C24AFC3B900BA1C34 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F5D7B08424AE492400BA1C34 /* ContatoService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +213,7 @@
 				F5D7B07824AE2CE200BA1C34 /* Assets.xcassets in Resources */,
 				F5D7B07324AE2CD600BA1C34 /* Main.storyboard in Resources */,
 				F5D7B08724AE653600BA1C34 /* picpay.png in Resources */,
+				F5DA9A8F24B3A80400BAD8B7 /* cartaoImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +272,7 @@
 				F5D7B06E24AE2CD600BA1C34 /* SceneDelegate.swift in Sources */,
 				F5D7B07624AE2CD600BA1C34 /* PicPayTeste.xcdatamodeld in Sources */,
 				F5D7B08324AE328F00BA1C34 /* ContatoCellTableViewCell.swift in Sources */,
+				F5DA9A9524B3BEE000BAD8B7 /* RegisterCardVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
